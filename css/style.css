@@ -1,3 +1,120 @@
-body{
-    background: #fff;
+html {
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+	
+	color: #000;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.site-header{
+	background: #0d6d52;
+	background: linear-gradient(360deg,#104d3b, rgb(202, 226, 219) );
+	height: 100vh;
+	
+}
+
+.botones-principal,h1 {
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.btn-nuevo{
+	background:#47a0d8;
+}
+.btn-pedir{
+	background: #c78843;
+}
+
+.btn-detener{
+	background: #9e3b36;
+}
+
+.cartas {
+	position: relative;
+	width: 95px;
+	margin-left: -75px;
+	left: 100px;
+}
+
+h2{
+	font-size: 20px;
+	margin-left: 20px
+}
+
+#jugador-cartas{
+	height: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .site-header {
+	background: #000;
+	height: 100vh;
+	text-align: center;
+}
+
+ h1 {
+	color: #fff;
+	font-size: 25px;
+	margin-top: 0;
+	padding-top: 10px;
+}
+.botones-principal {
+	text-align: center;
+	padding-top: 5px;
+	margin: 0;
+}
+.btn {
+	padding: 10px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+}
+
+.btn-nuevo {
+	color: #fff;
+	background: red;
+}
+.btn-pedir {
+	background: blue;
+}
+.btn-detener {
+	background: #000;
+}
+
+.cartas {
+	position: relative;
+	left: 100px;
+	margin-left: -75px;
+	width: 150px;
+}
+#jugador-cartas {
+	height: 220px;
+} */

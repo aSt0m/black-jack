@@ -1,17 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Black-jack</title>
-</head>
-<body>
-    <div class="root">
-        <h1 class="title">Black-Jack</h1>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"></script>
-    <script src="js/app.js"></script>
-</body>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" href="/assets/img/poker.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>BlackJack</title>
+	</head>
+	<body>
+		<header class="site-header">
+            <div class="title">
+                <h1>Black♠Jack</h1>
+            </div>
+            <div class="contenido-header">
+                
+                <div class="botones-principal">
+                    <button class="btn btn-nuevo ">Nuevo Juego</button>
+                    <button class="btn btn-pedir ">Pedir carta</button>
+                    <button class="btn btn-detener ">Detener</button>
+                    
+                </div>
+                
+                <div class="jugador">
+                    <h2>Jugador 1 -<small>0</small></h2>
+                    <div id="jugador-cartas">
+                        <img class="cartas" src="cartas/10C.png" alt="Imagen carta">
+                     
+                        
+                    </div>
+                </div>
+                <div class="computadora">
+                    <h2>Computadora -<small>0</small></h2>
+                    <div id="jugador-cartas">
+                        <img class="cartas" src="cartas/7D.png" alt="Imagen carta">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </header>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/underscore@1.12.0/underscore-min.js"></script>
+        <!-- <script  src="assets/js/underscore/underscore-esm-min.js"></script> -->
+		<script src="assets/js/juego.js"></script>
+	</body>
 </html>
