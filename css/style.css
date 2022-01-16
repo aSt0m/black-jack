@@ -28,13 +28,27 @@ img {
 	height: 100vh;
 	
 }
-
-.botones-principal,h1 {
+.container-title{
 	text-align: center;
+}
+.title{
 	margin: 0;
+	padding: 1rem 0;
+}
+
+.botones-principal {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin: 0 auto;
 	padding-top: 20px;
 }
 
+.btn{
+	padding: .5rem 1rem;
+	border-radius: 2rem;
+}
 .btn-nuevo{
 	background:#47a0d8;
 }
@@ -58,11 +72,14 @@ h2{
 	margin-left: 20px
 }
 
-#jugador-cartas{
-	height: 130px;
+.jugador{
+	height: 180px;
 }
 
-
+.perdiste{
+	font-size: 8rem;
+	height: 100%;
+}
 
 
 
