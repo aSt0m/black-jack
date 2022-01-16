@@ -26,6 +26,8 @@ img {
 	background: #0d6d52;
 	background: linear-gradient(360deg,#104d3b, rgb(202, 226, 219) );
 	height: 100vh;
+	position: relative;
+	overflow: hidden;
 	
 }
 .container-title{
@@ -76,10 +78,21 @@ h2{
 	height: 180px;
 }
 
-.perdiste{
-	font-size: 8rem;
-	height: 100%;
+.container-lose{
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	
+	
 }
+.loser, .win{
+	font-size: 8rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 0;
+	visibility: hidden
+}
+
 
 
 

@@ -27,7 +27,8 @@ const divJugador = document.querySelector('.jugador');
 const divImg = document.querySelector('img')
 
 const siteHeader = document.querySelector('.site-header');
-
+const loser = document.querySelector('.loser');
+const win = document.querySelector('.win')
 function crearDeck() {
 
 
@@ -77,8 +78,8 @@ function valorCarta(carta) {
 
         } else {
             valor = 10;
-            return valor;
         }
+        return valor;
         console.log(`El valor es de una letra, vale ${valor}`);
 
     } else {
@@ -106,24 +107,34 @@ btnPedirCarta.addEventListener('click', () => {
     divJugador.append(imgCarta);
 
     if (puntosJugador > 21) {
-        console.log(`Tienes: ${puntosJugador} puntos, perdiste`)
         btnPedirCarta.disabled = 'true';
-        
+       
+        console.log(`Tienes: ${puntosJugador} puntos, perdiste`)
+        loser.style.visibility  = 'visible'
         
     } else if (puntosJugador === 21) {
         {
             
             console.log("Conseguiste 21 Ganaste")
             btnPedirCarta.disabled = 'true';
+            win.style.visibility = 'visible'
+            
+            
         }
     }
 
 
 });
 
-const botonNuevo = document.createElement('button');
-divBotones.append(botonNuevo);
-botonNuevo.innerText = "Botoncito"
-botonNuevo.classList.add("btn-nuevo", "btn")
+btnNuevo.addEventListener('click', ()=>{
+    location.reload()
+})
+
+
+
+// const botonNuevo = document.createElement('button');
+// divBotones.append(botonNuevo);
+// botonNuevo.innerText = "Botoncito"
+// botonNuevo.classList.add("btn-nuevo", "btn")
 
 
