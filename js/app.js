@@ -25,6 +25,7 @@ const player = document.querySelector('.player');
 
 const divJugador = document.querySelector('.jugador');
 const divImg = document.querySelector('img')
+const cartas = document.querySelector('.cartas');
 
 const siteHeader = document.querySelector('.site-header');
 const loser = document.querySelector('.loser');
@@ -80,7 +81,7 @@ function valorCarta(carta) {
             valor = 10;
         }
         return valor;
-        console.log(`El valor es de una letra, vale ${valor}`);
+        
 
     } else {
 
@@ -92,6 +93,32 @@ function valorCarta(carta) {
 
 }
 // valorCarta( "ds" );
+
+
+
+//Turno Computadora
+
+const turnoComputadora = ( puntosMinimos )=>{
+    
+    const carta = pedirCarta();
+    puntosJugador = puntosJugador + valorCarta(carta);
+    player.innerText = puntosJugador;
+    
+    const imgCarta = document.createElement('img');
+    imgCarta.src = `cartas/${carta}.png`
+    imgCarta.classList = 'cartas';
+    
+    divJugador.append(imgCarta);
+    
+  
+        
+do {
+    
+} while (condition);
+
+    console.log( "turno computadora")
+}
+
 
 
 //Eventos
@@ -127,7 +154,9 @@ btnPedirCarta.addEventListener('click', () => {
 });
 
 btnNuevo.addEventListener('click', ()=>{
-    location.reload()
+    puntosJugador = 0;
+    player.innerText = puntosJugador;
+    cartas = '3';
 })
 
 
