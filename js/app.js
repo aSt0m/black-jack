@@ -25,6 +25,7 @@ let puntosComputadora = 0;
 let btnPedirCarta = document.querySelector('.btn-pedir');
 let btnNuevo = document.querySelector('.btn-nuevo');
 let btnDetener = document.querySelector('.btn-detener');
+let neu = document.querySelector('.neu');
 
 const divBotones = document.querySelector('#divBotones');
 const player = document.querySelector('.player');
@@ -219,4 +220,16 @@ btnNuevo.addEventListener('click', ()=>{
 })
 
 
+neu.addEventListener('click',()=>{
+    neu.style.boxShadow =  "inset 9px 9px 17px #258b6e",
+    "inset -9px -9px 17px #31bb94";
+    console.log( click )
+    
+})
+// neu.addEventListener('click', ()=>{
+//     neu.style.background = "linear-gradient(145deg, #2eae8a, #279374);"
+//     neu.style.boxShadow = "9px 9px 17px #258b6e",
+//     "-9px -9px 17px #31bb94;"
+// })
 })();
+

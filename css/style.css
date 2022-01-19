@@ -23,8 +23,8 @@ img {
 }
 
 .site-header{
-	background: #0d6d52;
-	background: linear-gradient(360deg,#104d3b, rgb(202, 226, 219) );
+	background: #2ba381;
+	/* background: linear-gradient(360deg,#104d3b, rgb(202, 226, 219) ); */
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
@@ -72,10 +72,12 @@ img {
 	background: #9e3b36;
 }
 
+
+
 .cartas {
 	position: relative;
 	width: 95px;
-	margin-left: -75px;
+	margin-left: -50px;
 	left: 100px;
 }
 
