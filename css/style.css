@@ -93,24 +93,19 @@ h2{
 	left: 25%;
 	right: 50%;
 	top: 50%;	
-	animation: loser 2s ease;
-}
-@keyframes loser {
-	0%{
-		transform: rotate(20deg);
-		
-	}	
-	50%{
-		transform: rotate(-20deg);
-
-	}
 }
 
 .loser, .win{
 	font-size: 8rem;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	margin: 0;
+	animation: loser 6s ease  ;
 	visibility: hidden
+}
+@keyframes loser {
+	to{
+		transform: translateY(3rem)
+	}
 }
 @media (max-width: 678px){
 	.loser, .win{
