@@ -118,9 +118,10 @@ const turnoComputadora = ( puntosMinimos )=>{
         
         const imgCarta = document.createElement('img');
         imgCarta.src = `cartas/${carta}.png`
-        imgCarta.classList = 'cartas';
         
         divComputadora.append( imgCarta );
+        imgCarta.classList = 'cartas';
+    
         
         if( puntosMinimos > 21 ) {
             
@@ -141,7 +142,7 @@ const turnoComputadora = ( puntosMinimos )=>{
         } else {
             alert('Computadora gana!!')
         }
-    }, 10);
+    }, 200);
 
 }
 
@@ -211,6 +212,8 @@ btnNuevo.addEventListener('click', ()=>{
 
     btnDetener.disabled = false;
     btnPedirCarta.disabled = false;
+
+    loser.style.visibility = 'hidden';
 
 })
 

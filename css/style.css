@@ -46,10 +46,20 @@ img {
 	margin: 0 auto;
 	padding-top: 20px;
 }
+@media (max-width: 678px) {
+	.botones-principal{
+		flex-wrap: wrap;
+		width: 90%;
+		margin: 1rem auto;
+		justify-content: space-around;
+		
+	}
+}
 
 .btn{
 	padding: .5rem 1rem;
 	border-radius: 2rem;
+	margin: .5rem 0.5rem;
 }
 .btn-nuevo{
 	background:#47a0d8;
@@ -80,17 +90,32 @@ h2{
 
 .container-lose{
 	position: absolute;
-	left: 50%;
+	left: 25%;
 	right: 50%;
-	top: 50%;
-	
-	
+	top: 50%;	
+	animation: loser 2s ease;
 }
+@keyframes loser {
+	0%{
+		transform: rotate(20deg);
+		
+	}	
+	50%{
+		transform: rotate(-20deg);
+
+	}
+}
+
 .loser, .win{
 	font-size: 8rem;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	margin: 0;
 	visibility: hidden
+}
+@media (max-width: 678px){
+	.loser, .win{
+		font-size: 3rem;
+	}
 }
 
 
