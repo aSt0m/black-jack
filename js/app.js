@@ -178,7 +178,7 @@ btnPedirCarta.addEventListener('click', () => {
             
             
         }
-    }
+    }  
 
     
 });
@@ -214,6 +214,7 @@ btnNuevo.addEventListener('click', ()=>{
     btnPedirCarta.disabled = false;
 
     loser.style.visibility = 'hidden';
+    win.style.visibility = 'hidden';
 
 })
 
