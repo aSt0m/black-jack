@@ -79,7 +79,10 @@ img {
 	width: 95px;
 	margin-left: -50px;
 	left: 100px;
+	transform: rotate(360deg) ;
+	transition: ease infinite;
 }
+
 
 h2{
 	font-size: 20px;

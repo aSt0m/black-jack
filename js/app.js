@@ -131,19 +131,21 @@ const turnoComputadora = ( puntosMinimos )=>{
     } 
     while (( puntosComputadora < puntosMinimos ) && ( puntosMinimos <= 21 ));
 
-    // setTimeout(() => {
+    setTimeout(() => {
         
         
-    //     if( puntosComputadora === puntosMinimos ){
-    //         alert( "Nadie gana!!")
-    //     } else if( puntosMinimos > 21){
-    //         alert( "Computadora gana!!");
-    //     } else if( puntosComputadora > 21 ){
-    //         alert( "Jugador gana!")
-    //     } else {
-    //         alert('Computadora gana!!')
-    //     }
-    // }, 200);
+        if( puntosComputadora === puntosMinimos ){
+           
+            alert( "Nadie gana!!")
+        } else if( puntosMinimos > 21){
+            alert( "Computadora gana!!");
+        } else if( puntosComputadora > 21 ){
+            alert( "Jugador gana!")
+        } else {
+            alert('Computadora gana!!')
+           
+        }
+    }, 200);
 
 }
 
@@ -171,12 +173,15 @@ btnPedirCarta.addEventListener('click', () => {
     } else if (puntosJugador === 21) {
         {
             
-            console.log("Conseguiste 21 Ganaste")
-            btnPedirCarta.disabled = 'true';
-            btnDetener.disabled = 'true';
+                
+                console.log("Conseguiste 21 Ganaste")
+                btnPedirCarta.disabled = 'true';
+                btnDetener.disabled = 'true';
+                
             win.style.visibility = 'visible';
             turnoComputadora( puntosJugador );
             
+           
             
         }
     }  
@@ -191,7 +196,8 @@ btnDetener.addEventListener('click', ()=>{
     btnDetener.disabled = true;
     btnPedirCarta.disabled = true;
     turnoComputadora( puntosJugador );
-    
+    console.log(` puntos jugador:${puntosJugador} puntos computadora: ${puntosComputadora}`)
+   
 })
 
 
@@ -220,16 +226,6 @@ btnNuevo.addEventListener('click', ()=>{
 })
 
 
-neu.addEventListener('click',()=>{
-    neu.style.boxShadow =  "inset 9px 9px 17px #258b6e",
-    "inset -9px -9px 17px #31bb94";
-    console.log( click )
-    
-})
-// neu.addEventListener('click', ()=>{
-//     neu.style.background = "linear-gradient(145deg, #2eae8a, #279374);"
-//     neu.style.boxShadow = "9px 9px 17px #258b6e",
-//     "-9px -9px 17px #31bb94;"
-// })
+
 })();
 
